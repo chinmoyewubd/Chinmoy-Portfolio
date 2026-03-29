@@ -2,10 +2,254 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chinmoy's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Chinmoy Karmakar | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <h3 id="my-name">Chinmoy <span>Karmakar</span></h3>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="home" class="home">
+            <div class="home-content">
+                <h1 class="heading">Hi, I'm</h1>
+                <h1 class="heading">Chinmoy Karmakar</h1>
+                <h3>Software Engineer | Web Developer | Application Developer</h3>
+                <p class="caption">Passionate Computer Science graduate with expertise in 
+                    programming and software development. Interested in building 
+                    impactful technology solutions and collaborating with innovative 
+                    teams to create modern and scalable applications.
+                </p>
+                <a href="CV/CHINMOY_KARMAKAR_CV.pdf" download class="btn-link">
+                    <button class="btn">Download CV</button>
+                </a>
+                <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Me</button>
+            </div>
+            <img src="image/github.png" alt="Profile Picture">
+        </div>
+    </header>
+
+    <main>
+        <!-- Education Section -->
+        <section id="education" class="education">
+            <h2 class="section-title">Education</h2>
+            <div class="education-container">
+                <div class="education-content">
+                    <div class="education-item">
+                        <div><h2>🎓 BSc in Computer Science and Engineering</h2></div>
+                        <div><h4>Feb 2022 – Dec 2025</h4></div>
+                    </div>
+                    <p> East West University | CGPA: 3.73/4.00 (Major: Software Engineering)</p>
+                </div>
+
+                <div class="education-content">
+                    <div class="education-item">
+                        <div><h2>📘 Higher Secondary Certificate (HSC)</h2></div>
+                        <div><h4>2019</h4></div>
+                    </div>
+                    <p>Birshreshtha Munshi Abdur Rouf Public College | GPA: 4.33 (Science)</p>
+                </div>
+
+                <div class="education-content">
+                    <div class="education-item">
+                        <div><h2>📚 Secondary School Certificate (SSC)</h2></div>
+                        <div><h4>2017</h4></div>
+                    </div>
+                    <p>Goila Model High School | GPA: 5.00 (Science)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-badge">C</span>
+                        <span class="skill-badge">C++</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">PHP</span>
+                        <span class="skill-badge">SQL</span>
+                        <span class="skill-badge">PL/SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3><i class="fas fa-chart-line"></i> Data Visualization</h3>
+                    <div class="skill-list">
+                        <span class="skill-badge">Matplotlib</span>
+                        <span class="skill-badge">Excel</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3><i class="fas fa-globe"></i> Web Development</h3>
+                    <div class="skill-list">
+                        <span class="skill-badge">HTML5/CSS3</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">Express.js</span>
+                        <span class="skill-badge">React.js</span>
+                        <span class="skill-badge">Node.js</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
+                    <div class="skill-list">
+                        <span class="skill-badge">Android Studio</span>
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">XML</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3><i class="fas fa-database"></i> Database Management</h3>
+                    <div class="skill-list">
+                        <span class="skill-badge">MySQL</span>
+                        <span class="skill-badge">Firebase</span>
+                        <span class="skill-badge">MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3><i class="fas fa-desktop"></i> Operating Systems</h3>
+                    <div class="skill-list">
+                        <span class="skill-badge">Windows</span>
+                        <span class="skill-badge">Linux</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3><i class="fas fa-tools"></i> Tools & Version Control</h3>
+                    <div class="skill-list">
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">GitHub</span>
+                        <span class="skill-badge">VS Code</span>
+                        <span class="skill-badge">XAMPP</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3><i class="fas fa-drafting-compass"></i> Designing Software</h3>
+                    <div class="skill-list">
+                        <span class="skill-badge">AutoCAD 2D</span>
+                        <span class="skill-badge">AutoCAD 3D</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-title">
+                        <i class="fas fa-bus"></i> Jatra - Smart City Bus Tracking
+                    </div>
+                    <div class="project-desc">
+                        A real-time bus tracking platform for Dhaka developed using Android (Java) and Firebase. 
+                        It incorporates a custom BFS-based routing algorithm to support multi-leg journey planning, 
+                        an offline-first design to avoid map API costs, and a three-layer GPS validation system 
+                        to improve location data accuracy.
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Android/Java</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">BFS Algorithm</span>
+                        <span class="tech-tag">GPS</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">
+                        <i class="fas fa-network-wired"></i> SmartSubnet Network
+                    </div>
+                    <div class="project-desc">
+                        A comprehensive network design for a multi-campus university using Cisco Packet Tracer. 
+                        Implements OSPF routing, DHCP auto-configuration, DNS resolution, and web services across 
+                        8 campuses with mixed Class A, B, and C IP addressing. Features both wired and wireless 
+                        hosts with end-to-end connectivity.
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Cisco Packet Tracer</span>
+                        <span class="tech-tag">OSPF</span>
+                        <span class="tech-tag">DHCP</span>
+                        <span class="tech-tag">DNS</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">
+                        <i class="fas fa-hospital-user"></i> Doctor's Appointment App
+                    </div>
+                    <div class="project-desc">
+                        A healthcare application that simplifies booking and managing medical appointments. 
+                        Users can search doctors by specialty, check availability, and schedule appointments 
+                        with real-time updates, while doctors can efficiently manage their profiles and schedules.
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Android Studio</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">XML</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">
+                        <i class="fas fa-broadcast-tower"></i> Wireless RF Bridge
+                    </div>
+                    <div class="project-desc">
+                        RF-based wireless communication system implementing HT12E/HT12D encoder-decoder pair 
+                        for push-button controlled data transmission with LED output indicators. Demonstrates 
+                        practical wireless control and embedded systems concepts.
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">RF Module</span>
+                        <span class="tech-tag">HT12E/HT12D</span>
+                        <span class="tech-tag">Embedded Systems</span>
+                        <span class="tech-tag">Arduino</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+    <h2 class="section-title">Let's Connect</h2>
+    <div class="contact-container">
+        <a href="mailto:chinmoykarmakar2025@gmail.com" target="_blank" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+        </a>
+        <a href="https://github.com/chinmoyewubd" target="_blank" class="contact-card">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/chinmoy-karmakar-ck" target="_blank" class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+        </a>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <p>© 2025 Chinmoy Karmakar | Built with passion & modern web technologies</p>
+    </footer>
 </body>
 </html>
