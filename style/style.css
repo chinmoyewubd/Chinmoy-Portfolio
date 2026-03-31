@@ -34,7 +34,7 @@ nav span {
 
 #my-name {
     color: white;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -48,7 +48,7 @@ nav span {
 nav ul li a {
     color: #eef2ff;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     transition: 0.2s;
     position: relative;
