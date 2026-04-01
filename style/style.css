@@ -48,7 +48,7 @@ nav span {
 nav ul li a {
     color: #eef2ff;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
     transition: 0.2s;
     position: relative;
@@ -79,14 +79,14 @@ nav ul li a:hover::after {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 80px 8% 60px;
+    padding: 90px 8% 60px;
     margin-top: 90px;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
 .heading {
-    font-size: 3.2rem;
+    font-size: 4.5rem;
     color: #6ea8fe;
     margin-bottom: 0.5rem;
     font-weight: 700;
@@ -94,7 +94,7 @@ nav ul li a:hover::after {
 
 .caption {
     margin: 1.2rem 0 1.8rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.6;
     color: #e0e7ff;
 }
@@ -106,6 +106,7 @@ nav ul li a:hover::after {
     border-radius: 50%;
     box-shadow: 0px 3px 3px 3px #9cdff7;
     transition: transform 0.3s ease;
+    margin-right: 100px;
 }
 
 .home img:hover {
@@ -113,7 +114,7 @@ nav ul li a:hover::after {
 }
 
 .home-content {
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .btn {
@@ -171,8 +172,8 @@ main {
 
 /* Education Section */
 .education {
-    padding: 40px 20px 60px;
-    margin: 30px 0;
+    padding: 70px 20px 60px;
+    margin:50px 0;
 }
 
 .education-container {
@@ -221,9 +222,96 @@ main {
     padding-left: 40px;
 }
 
+/* Experience Section */
+.experience {
+    padding: 70px 20px 60px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 48px;
+    margin: 20px 0 30px;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.exp-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(2px);
+    border-radius: 28px;
+    padding: 1.8rem 2rem;
+    transition: all 0.25s ease;
+    border-left: 5px solid #b9c3f0;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.exp-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    gap: 12px;
+}
+
+.exp-header h2 {
+    font-size: 1.6rem;
+    color: #b9c3f0;
+    font-weight: 600;
+}
+
+.exp-date {
+    font-weight: 500;
+    color: #b9c3f0;
+    background: #0f132e;
+    padding: 4px 16px;
+    border-radius: 40px;
+    font-size: 0.9rem;
+}
+
+.exp-location {
+    font-size: 1rem;
+    color: #cddcff;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.exp-desc {
+    margin-top: 12px;
+    color: #e0e7ff;
+    line-height: 1.5;
+}
+
+.achievement-badge {
+    background: #2a2f5e;
+    border-radius: 20px;
+    padding: 1rem 1.8rem;
+    margin-top: 20px;
+    border-left: 4px solid #e0e7ff;
+}
+
+.achievement-badge h3 {
+    color: #e0e7ff;
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+}
+.achievement-badge h3 i{
+    color: #ffd966;
+}
+
+
+
 /* Skills Section */
 .skills {
-    padding: 20px 20px 60px;
+    padding: 70px 20px 60px;
 }
 
 .skills-grid {
@@ -286,12 +374,12 @@ main {
 
 /* Projects Section */
 .projects {
-    padding: 20px 20px 60px;
+    padding: 70px 20px 60px;
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 30px;
     margin-top: 30px;
 }
@@ -336,6 +424,7 @@ main {
     flex-wrap: wrap;
     gap: 8px;
     margin-top: 10px;
+    margin-bottom: 18px;
 }
 
 .tech-tag {
@@ -347,9 +436,41 @@ main {
     letter-spacing: 0.3px;
 }
 
+/* GitHub Link inside Project Card */
+.project-github {
+    margin-top: 12px;
+    text-align: right;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 14px;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #0f132e;
+    padding: 6px 16px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #eef2ff;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+.github-link i {
+    font-size: 1.2rem;
+}
+
+.github-link:hover {
+    background: #ffffff;
+    color: #24292e;
+    transform: translateX(4px);
+}
+
 /* Contact Section */
 .contact {
-    padding: 40px 20px 70px;
+    padding: 50px 20px 70px;
     text-align: center;
 }
 
@@ -466,7 +587,12 @@ footer {
         flex-direction: column;
         gap: 8px;
     }
-    
+
+    .exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .contact-card {
         min-width: 200px;
         padding: 1.5rem;
